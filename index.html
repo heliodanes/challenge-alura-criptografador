@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - Hélio Danes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="./Logo.svg" id="logo_alura" onclick="window.location.reload()">
+    </header>
+    <script src="./funcoes.js"></script>
+    <main class="pagina">
+        <section class="texto_e_botoes">
+            <div class="texto">
+                <textarea id="entrada_texto" name="textarea" rows="20" cols="20">Digite o seu texto</textarea>
+            </div>
+
+            <div class="botoes">
+                <button class="criptografar" onclick="criptografar()">
+                    Criptografar
+                </button>
+                <button class="descriptografar" onclick="descriptografar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section class="saida_mensagem">
+            <div id="img_e_msgs" class="img_e_msgs">
+                <img id="img" class="img_quadro_msg" src="./foto_quadro_msg.svg" alt="Desenho de um homem olhando com uma lupa um diamante.">
+                <div class="alertas_msg_faltando">
+                    <p class="alerta_msg_faltando1">Nenhuma mensagem encontrada</p>
+                    <p class="alerta_msg_faltando2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div id="saida_texto" class="saida_texto">
+                <div>
+                    <textarea id="saida" name="textarea" rows="20" cols="20"></textarea>
+                </div>
+                <div class="botoes">
+                    <button class="copiar" onclick="copiar()">
+                        Copiar
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

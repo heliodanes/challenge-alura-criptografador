@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.logo {
+    padding: 2% 0% 0% 3.5%;
+}
+
+#logo_alura{
+    cursor: pointer;
+}
+
+.pagina {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 80px;
+}
+
+
+.texto_e_botoes {
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.saida_mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 400px;
+    height: 922px;
+    border-radius: 32px;
+}
+
+.img_e_msgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+}
+
+.saida_texto{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+#saida{
+    text-align: start;
+    width: 341px;
+    height: 750px;
+    font-size: 1.5rem;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+}
+
+.img_quadro_msg {
+    justify-content: center;
+    width: 80%;
+}
+
+.alertas_msg_faltando {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.alerta_msg_faltando1 {
+    text-align: center;
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.alerta_msg_faltando2 {
+    text-align: center;
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.criptografar {
+    background-color: #0A3871;
+    width: 328px;
+    padding: 3% 1.5%;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.descriptografar {
+    background-color: #D8DFE8;
+    width: 328px;
+    padding: 3% 1.5%;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: #0A3871;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.copiar {
+    background-color: #D8DFE8;
+    width: 338px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: #0A3871;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+#entrada_texto {
+    border: 0px;
+    width: 680px;
+    height: 668px;
+    color: #0A3871;
+    font-size: 2rem;
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px){
+    .pagina{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #img{
+        display: none;
+    }
+}
+
+
